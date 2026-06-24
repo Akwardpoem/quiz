@@ -1,0 +1,128 @@
+body {
+  color: #f8eeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url('bc2.png');
+  font-size: 20px;
+ 
+}
+
+.container {
+  background-color: rgb(74, 36, 33);
+  border-radius: 12px;
+  padding: 25px;
+  /* height: 200px; */
+  /* width: 400px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container label{
+  display: flex;
+  align-items: center;      /* Выравнивает кружок и текст по центру одной линии */
+  gap: 8px;
+  color:rgb(220, 151, 146)
+}
+.containerh2 {
+  margin-top: 0;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgb(252, 252, 252), 0 0 1em rgb(231, 152, 152); 
+  color: rgb(255, 255, 255); 
+}
+
+.containerh3 {
+  margin-top: 0;
+  text-align: center;
+  color: rgb(220, 151, 146); 
+  font-style: sans-serif;
+}
+
+.form-quiz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.quiz {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgb(252, 252, 252), 0 0 1em rgb(231, 152, 152); /* Параметры тени */
+  color: rgb(71, 67, 67); 
+  background: rgb(255, 193, 138);
+  
+}
+
+
+
+.btn {
+  color: rgb(180, 65, 58);
+  text-decoration: none; 
+  user-select: none; 
+  background: rgb(220, 151, 146); 
+  padding: .7em 1.5em; 
+  margin-top: 20px;
+  border-radius: 150px;
+  align-items: center;
+} 
+.btn:hover { background: rgb(160, 109, 106);
+  color: rgb(220, 151, 146)
+} 
+.btn:active { background: rgb(114, 67, 5); } 
+
+
+.list {
+  text-decoration: none; 
+  user-select: none; 
+  padding: .7em 1.5em; 
+  color: rgb(220, 151, 146);
+  background: rgb(255, 193, 138);
+
+}
+
+.radio-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.outer-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.restext{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+select {
+  font-size: 18px;
+  padding: 10px 15px;
+  color: rgb(180, 65, 58);
+  background: rgb(220, 151, 146);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  max-width: 300px;
+  transition: background 0.2s;
+}
+
+select:focus {
+  border-color: rgb(153, 104, 101);
+}

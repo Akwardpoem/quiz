@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='style1.css') }} ">
+    <title>Викторина</title>
+</head>
+<body class="body">
+    <div class="container">
+    <h2 class="containerh3">{{question}}</h2>
+    <form method="post" action="question">
+        <input type="hidden" name="quest_id" value="{{ question_id }}">
+        {% for answer in answers %}
+        <label><input type="radio" name="ans_text" value="{{ answer }}" class="radio-buttons">{{answer}}</label>
+        {% endfor %}
+        <p><input type="submit" value="Выбрать" class="btn"></p>
+    </form>
+    </div>
+</body>
+</html>

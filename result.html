@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='style1.css') }} ">
+    <title>Викторина</title>
+</head>
+<body>
+    <div class="container">
+    <h2 class="containerh3">Результат</h2>
+    <p><label>Правильных ответов {{answers}} из {{total}}</label></p>
+    <p><a href=" {{url_for('index')}} " class="btn">Еще раз</a></p>
+    </div>
+</body>
+</html>
